@@ -1,51 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 200 200" role="img" aria-label="Ink by Mwasaru favicon">
-  <!-- Circular dark background matching the supplied image -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ink by Mwasaru favicon">
   <defs>
-    <linearGradient id="bg" x1="0" x2="1">
-      <stop offset="0%" stop-color="#0f243d"/>
-      <stop offset="100%" stop-color="#081827"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1f3a"/>
+      <stop offset="100%" stop-color="#07182d"/>
     </linearGradient>
-    <linearGradient id="inkBlue" x1="0" x2="1">
-      <stop offset="0%" stop-color="#6aa0d6"/>
-      <stop offset="100%" stop-color="#3f6aa8"/>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7fb0d9"/>
+      <stop offset="100%" stop-color="#4d78b0"/>
     </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="0.6" result="b"/>
-      <feBlend in="SourceGraphic" in2="b"/>
-    </filter>
   </defs>
 
-  <rect width="200" height="200" rx="100" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
 
-  <!-- Simplified portrait & hand holding machine (vector approximation for favicon clarity) -->
-  <g transform="translate(18,12) scale(0.7)" fill="none" stroke="#2b547e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-    <!-- Hair / top knot silhouette -->
-    <path d="M70 10c6-12 34-16 46-6 6 6 18 28 12 40-8 18-28 20-40 18-10-2-18-8-22-20-4-12-6-28 4-32z" fill="#4a77a8" stroke="none" opacity="0.95"/>
-    <!-- Face outline -->
-    <path d="M80 40c-6 2-16 2-20 14-6 18 2 34 8 40 6 6 20 8 28 4 12-6 18-18 18-30 0-12-6-28-12-32-6-4-12-6-22-6z" fill="#5b8fc0" stroke="none"/>
-    <!-- Beard and jaw detail -->
-    <path d="M86 74c-2 6-2 10 2 14 6 6 12 6 18 4" stroke="#18324a" fill="none" stroke-width="2"/>
+  <g fill="url(#blue)">
+    <!-- top hair / head silhouette -->
+    <path d="M159 121c31-61 144-72 200-15 42 42 49 97 26 142-21 41-51 73-88 94-44 25-102 30-143 8-42-22-67-63-67-113 0-31 13-70 72-116z"/>
 
-    <!-- Eyes and eyebrow lines -->
-    <path d="M78 56c6-2 12-2 18 0" stroke="#18324a" stroke-width="1.8" fill="none"/>
-    <path d="M76 62c6 4 14 4 20 0" stroke="#18324a" stroke-width="1.6" fill="none"/>
+    <!-- face -->
+    <path d="M153 197c17-52 54-82 108-90 57-9 116 16 146 71 26 47 23 109-10 151-27 34-78 60-132 60-53 0-100-27-124-74-18-35-16-83 12-118z"/>
 
-    <!-- Hand holding a stylized tattoo machine -->
-    <g transform="translate(-8,36)">
-      <path d="M70 60c-8-6-18-8-28-6-6 2-10 6-14 12-2 4-2 10 2 12 4 4 10 6 16 6 10 0 18-6 26-12 6-4 12-10 12-18 0-6-6-10-14-14z" fill="#4a77a8" stroke="none"/>
-      <!-- simple machine body -->
-      <rect x="92" y="46" width="24" height="10" rx="2" fill="#2b547e"/>
-      <path d="M94 52h20" stroke="#a8cade" stroke-width="2" stroke-linecap="round"/>
-      <circle cx="116" cy="51" r="2" fill="#cfe6fb"/>
-      <path d="M94 56l-16 6" stroke="#cfe6fb" stroke-width="2" stroke-linecap="round"/>
+    <!-- neck / shoulders -->
+    <path d="M216 300c22 11 44 17 68 18 28 1 54-6 79-19l11 74c-18 31-44 52-80 60-41 9-86-5-112-36l34-97z"/>
+
+    <!-- left side ear / head detail -->
+    <path d="M128 239c-8-8-21-16-32-13-15 4-25 18-27 34-1 17 10 28 24 32 18 6 33-3 42-18l-7-35z"/>
+
+    <!-- right side of face / cheek -->
+    <path d="M356 228c22 16 34 44 30 78-3 26-19 52-52 68 17-8 26-20 31-36 5-15 5-31 1-47-3-17-7-29-10-39z"/>
+
+    <!-- left hand and tattoo machine -->
+    <g transform="translate(40,250)">
+      <path d="M27 44c-34 26-31 88 7 103 17 7 39 8 55-7 18-18 17-44 5-66-15-29-38-41-67-30z"/>
+      <path d="M108 50c-18 10-32 31-27 53 5 22 27 39 52 42 44 5 76-22 83-52 8-34-17-63-53-66-18-2-35 7-55 23z"/>
+      <path d="M31 130l-28 9c-18 6-29 25-25 42 4 20 21 33 39 33 18 0 35-15 41-34l23-77-50-37z"/>
+      <path d="M118 131l36 15c18 7 27 29 22 47-6 21-28 34-49 29-20-5-36-24-37-43l-7-35 35-13z"/>
     </g>
 
-    <!-- Signature text (stylised M/Jeff) - simplified for favicon sizes -->
-    <g transform="translate(16,132) scale(0.9)" fill="#dfeafc" font-family="Georgia, 'Times New Roman', serif" font-weight="400">
-      <text x="0" y="0" font-size="22">M</text>
-      <text x="22" y="4" font-size="10">Jeff</text>
+    <!-- tattoo machine -->
+    <g transform="translate(0,0)">
+      <path d="M90 286l-25 17c-17 12-19 34-5 48l12 12c15 15 41 12 54-7l11-17 43-45-90-8z"/>
+      <path d="M157 290l62-28 27 8-38 52-52 22-18-18 19-34z"/>
+      <path d="M83 344l42 26 29-12 10-32-47-18-34 36z"/>
+      <path d="M171 221l-25-4-14 18 32 7 39 6 18-26-50-1z"/>
     </g>
+
+    <!-- right hand -->
+    <path d="M296 322c18 5 34 7 52 3 32-8 55-30 65-59 8-25 5-58-18-66-23-9-52 6-73 24-23 20-35 49-42 79-6 24-1 46 16 55z"/>
   </g>
 
+  <!-- facial details in darker blue to sharpen silhouette -->
+  <g fill="none" stroke="#2f537d" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M220 214c16-12 38-17 56-6 18 11 29 29 31 49 2 27-1 48-18 69" stroke-width="9"/>
+    <path d="M242 210c-18 23-22 58-16 82" stroke-width="9"/>
+    <path d="M205 188c8-17 25-29 42-33" stroke-width="8"/>
+    <path d="M330 187c-9-19-23-32-41-39" stroke-width="8"/>
+    <path d="M251 166c6-11 21-18 34-14 12 4 22 15 20 28" stroke-width="7"/>
+    <path d="M167 278c20-16 41-23 62-22" stroke-width="8"/>
+  </g>
+
+  <!-- subtle highlight for stylized look -->
+  <path d="M173 180c52-42 117-54 171-26 38 20 64 58 71 104-12-10-32-18-58-21-58-7-118 4-161 31-16 10-30 22-43 35-1-52 5-88 20-123z" fill="#8db6db" opacity="0.12"/>
 </svg>
