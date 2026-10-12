@@ -1,22 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ink by Mwasaru favicon">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 200 200" role="img" aria-label="Ink by Mwasaru favicon">
+  <!-- Circular dark background matching the supplied image -->
   <defs>
-    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#0d1f3e"/>
-      <stop offset="100%" stop-color="#08172f"/>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f243d"/>
+      <stop offset="100%" stop-color="#081827"/>
     </linearGradient>
-    <linearGradient id="ink" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#6e9ed4"/>
-      <stop offset="100%" stop-color="#4d73b7"/>
+    <linearGradient id="inkBlue" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6aa0d6"/>
+      <stop offset="100%" stop-color="#3f6aa8"/>
     </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.6" result="b"/>
+      <feBlend in="SourceGraphic" in2="b"/>
+    </filter>
   </defs>
 
-  <rect width="64" height="64" rx="10" fill="url(#bg)"/>
+  <rect width="200" height="200" rx="100" fill="url(#bg)"/>
 
-  <g transform="translate(6 2)">
-    <path d="M19 46c0-10 6-17 13-21 6 4 13 11 13 21v1H19v-1z" fill="url(#ink)" opacity="0.95"/>
-    <path d="M24 22c1-6 6-10 12-10 7 0 12 5 12 12 0 5-2 9-6 12-3 2-7 3-10 3-6 0-10-4-10-10 0-2 1-4 2-7z" fill="url(#ink)" opacity="0.9"/>
-    <path d="M31 19c-5 0-9 4-9 9 0 5 4 8 9 8 6 0 9-4 9-8 0-5-4-9-9-9zm-1 5c2-1 4-1 6 1" fill="none" stroke="#cfe0f6" stroke-width="1.8" stroke-linecap="round"/>
-    <path d="M16 48c5-11 13-17 22-17s17 6 22 17" fill="none" stroke="#dfeafc" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
-    <path d="M21 53h28" stroke="#dfeafc" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <!-- Simplified portrait & hand holding machine (vector approximation for favicon clarity) -->
+  <g transform="translate(18,12) scale(0.7)" fill="none" stroke="#2b547e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+    <!-- Hair / top knot silhouette -->
+    <path d="M70 10c6-12 34-16 46-6 6 6 18 28 12 40-8 18-28 20-40 18-10-2-18-8-22-20-4-12-6-28 4-32z" fill="#4a77a8" stroke="none" opacity="0.95"/>
+    <!-- Face outline -->
+    <path d="M80 40c-6 2-16 2-20 14-6 18 2 34 8 40 6 6 20 8 28 4 12-6 18-18 18-30 0-12-6-28-12-32-6-4-12-6-22-6z" fill="#5b8fc0" stroke="none"/>
+    <!-- Beard and jaw detail -->
+    <path d="M86 74c-2 6-2 10 2 14 6 6 12 6 18 4" stroke="#18324a" fill="none" stroke-width="2"/>
+
+    <!-- Eyes and eyebrow lines -->
+    <path d="M78 56c6-2 12-2 18 0" stroke="#18324a" stroke-width="1.8" fill="none"/>
+    <path d="M76 62c6 4 14 4 20 0" stroke="#18324a" stroke-width="1.6" fill="none"/>
+
+    <!-- Hand holding a stylized tattoo machine -->
+    <g transform="translate(-8,36)">
+      <path d="M70 60c-8-6-18-8-28-6-6 2-10 6-14 12-2 4-2 10 2 12 4 4 10 6 16 6 10 0 18-6 26-12 6-4 12-10 12-18 0-6-6-10-14-14z" fill="#4a77a8" stroke="none"/>
+      <!-- simple machine body -->
+      <rect x="92" y="46" width="24" height="10" rx="2" fill="#2b547e"/>
+      <path d="M94 52h20" stroke="#a8cade" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="116" cy="51" r="2" fill="#cfe6fb"/>
+      <path d="M94 56l-16 6" stroke="#cfe6fb" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Signature text (stylised M/Jeff) - simplified for favicon sizes -->
+    <g transform="translate(16,132) scale(0.9)" fill="#dfeafc" font-family="Georgia, 'Times New Roman', serif" font-weight="400">
+      <text x="0" y="0" font-size="22">M</text>
+      <text x="22" y="4" font-size="10">Jeff</text>
+    </g>
   </g>
+
 </svg>
