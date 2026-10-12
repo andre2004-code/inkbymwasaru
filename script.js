@@ -31,7 +31,7 @@ form.addEventListener('submit', (event) => {
   // Parse as local time to avoid shifting the selected calendar day.
   const readableDate = new Date(`${data.get('date')}T12:00:00`).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const lines = [
-    'Hi Mwasaru Inks! I’d like to request a tattoo appointment.',
+    'Hi Mwasaru! I’d like to request a tattoo appointment.',
     '',
     `Name: ${data.get('name')}`,
     `Placement: ${data.get('placement')}`,
