@@ -1,63 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ink by Mwasaru favicon">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1f3a"/>
-      <stop offset="100%" stop-color="#07182d"/>
-    </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#7fb0d9"/>
-      <stop offset="100%" stop-color="#4d78b0"/>
-    </linearGradient>
-  </defs>
+  <rect width="512" height="512" fill="#050505"/>
 
-  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  <!-- Tattoo machine body -->
+  <g fill="none" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- top cap -->
+    <path d="M182 118l42-38h64l42 38-20 22h-108l-20-22z" stroke-width="12" fill="#f3f3f3"/>
+    <path d="M202 116h108" stroke-width="10"/>
 
-  <g fill="url(#blue)">
-    <!-- top hair / head silhouette -->
-    <path d="M159 121c31-61 144-72 200-15 42 42 49 97 26 142-21 41-51 73-88 94-44 25-102 30-143 8-42-22-67-63-67-113 0-31 13-70 72-116z"/>
+    <!-- front machine body -->
+    <path d="M154 160h204c18 0 32 14 32 32v90c0 18-14 32-32 32H154c-18 0-32-14-32-32v-90c0-18 14-32 32-32z" stroke-width="12" fill="#f3f3f3"/>
 
-    <!-- face -->
-    <path d="M153 197c17-52 54-82 108-90 57-9 116 16 146 71 26 47 23 109-10 151-27 34-78 60-132 60-53 0-100-27-124-74-18-35-16-83 12-118z"/>
+    <!-- side detail lines -->
+    <path d="M196 160v156M256 160v156M316 160v156" stroke-width="10"/>
 
-    <!-- neck / shoulders -->
-    <path d="M216 300c22 11 44 17 68 18 28 1 54-6 79-19l11 74c-18 31-44 52-80 60-41 9-86-5-112-36l34-97z"/>
+    <!-- coil/rings -->
+    <circle cx="184" cy="196" r="18" fill="#f3f3f3" stroke="none"/>
+    <circle cx="296" cy="196" r="18" fill="#f3f3f3" stroke="none"/>
+    <circle cx="184" cy="264" r="18" fill="#f3f3f3" stroke="none"/>
+    <circle cx="296" cy="264" r="18" fill="#f3f3f3" stroke="none"/>
 
-    <!-- left side ear / head detail -->
-    <path d="M128 239c-8-8-21-16-32-13-15 4-25 18-27 34-1 17 10 28 24 32 18 6 33-3 42-18l-7-35z"/>
+    <!-- needle housing -->
+    <path d="M232 284h48v32h-48z" stroke-width="10" fill="#f3f3f3"/>
+    <path d="M256 316v58" stroke-width="12"/>
+    <path d="M236 374h40" stroke-width="12"/>
 
-    <!-- right side of face / cheek -->
-    <path d="M356 228c22 16 34 44 30 78-3 26-19 52-52 68 17-8 26-20 31-36 5-15 5-31 1-47-3-17-7-29-10-39z"/>
+    <!-- lower machine top / bracket -->
+    <path d="M165 170l-64 8 32 44 55-10-23-42z" stroke-width="10" fill="#f3f3f3"/>
+    <path d="M347 170l64 8-32 44-55-10 23-42z" stroke-width="10" fill="#f3f3f3"/>
 
-    <!-- left hand and tattoo machine -->
-    <g transform="translate(40,250)">
-      <path d="M27 44c-34 26-31 88 7 103 17 7 39 8 55-7 18-18 17-44 5-66-15-29-38-41-67-30z"/>
-      <path d="M108 50c-18 10-32 31-27 53 5 22 27 39 52 42 44 5 76-22 83-52 8-34-17-63-53-66-18-2-35 7-55 23z"/>
-      <path d="M31 130l-28 9c-18 6-29 25-25 42 4 20 21 33 39 33 18 0 35-15 41-34l23-77-50-37z"/>
-      <path d="M118 131l36 15c18 7 27 29 22 47-6 21-28 34-49 29-20-5-36-24-37-43l-7-35 35-13z"/>
-    </g>
-
-    <!-- tattoo machine -->
-    <g transform="translate(0,0)">
-      <path d="M90 286l-25 17c-17 12-19 34-5 48l12 12c15 15 41 12 54-7l11-17 43-45-90-8z"/>
-      <path d="M157 290l62-28 27 8-38 52-52 22-18-18 19-34z"/>
-      <path d="M83 344l42 26 29-12 10-32-47-18-34 36z"/>
-      <path d="M171 221l-25-4-14 18 32 7 39 6 18-26-50-1z"/>
-    </g>
-
-    <!-- right hand -->
-    <path d="M296 322c18 5 34 7 52 3 32-8 55-30 65-59 8-25 5-58-18-66-23-9-52 6-73 24-23 20-35 49-42 79-6 24-1 46 16 55z"/>
+    <!-- machine rod -->
+    <path d="M149 219l-118 66" stroke-width="12"/>
+    <path d="M363 219l118 66" stroke-width="12"/>
   </g>
 
-  <!-- facial details in darker blue to sharpen silhouette -->
-  <g fill="none" stroke="#2f537d" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M220 214c16-12 38-17 56-6 18 11 29 29 31 49 2 27-1 48-18 69" stroke-width="9"/>
-    <path d="M242 210c-18 23-22 58-16 82" stroke-width="9"/>
-    <path d="M205 188c8-17 25-29 42-33" stroke-width="8"/>
-    <path d="M330 187c-9-19-23-32-41-39" stroke-width="8"/>
-    <path d="M251 166c6-11 21-18 34-14 12 4 22 15 20 28" stroke-width="7"/>
-    <path d="M167 278c20-16 41-23 62-22" stroke-width="8"/>
+  <!-- Hand holding the tattoo gun -->
+  <g fill="#f3f3f3" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- palm -->
+    <path d="M132 420c-24-18-52-29-78-31-16-2-29 8-29 21 0 19 19 33 46 43 22 8 52 11 77 5l50-12-66-26z" stroke-width="8"/>
+    <path d="M119 351c-18 15-33 45-28 66 5 25 25 41 52 47 26 6 53-3 72-24l16-19-51-64-61-6z" stroke-width="8"/>
+
+    <!-- fingers -->
+    <path d="M186 355l38 70 26-7-20-78-44 15z" stroke-width="8"/>
+    <path d="M232 340l34 86 25-8-18-86-41 8z" stroke-width="8"/>
+    <path d="M271 332l28 74 25-7-15-75-38 8z" stroke-width="8"/>
+    <path d="M305 331l20 58 22-11-8-56-34 9z" stroke-width="8"/>
+
+    <!-- thumb -->
+    <path d="M118 421l32 88 52-22-35-81-49 15z" stroke-width="8"/>
   </g>
 
-  <!-- subtle highlight for stylized look -->
-  <path d="M173 180c52-42 117-54 171-26 38 20 64 58 71 104-12-10-32-18-58-21-58-7-118 4-161 31-16 10-30 22-43 35-1-52 5-88 20-123z" fill="#8db6db" opacity="0.12"/>
+  <!-- End of needle / tip -->
+  <g fill="none" stroke="#f3f3f3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 382v82" stroke-width="10"/>
+    <path d="M244 456l12 18 12-18" stroke-width="10"/>
+  </g>
+
+  <!-- Small circular accents for detail -->
+  <g fill="#f3f3f3" stroke="none">
+    <circle cx="120" cy="213" r="9"/>
+    <circle cx="392" cy="213" r="9"/>
+    <circle cx="166" cy="172" r="8"/>
+    <circle cx="346" cy="172" r="8"/>
+  </g>
 </svg>
